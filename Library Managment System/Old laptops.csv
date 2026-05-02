@@ -1,0 +1,41 @@
+id,type,Brand,Model,OperatingSystem,ReleaseDate,SerialNumber,available
+201,Laptop,HP,Model-1,Ubuntu Linux,2016-06-01,SN-100001,TRUE
+202,Laptop,HP,Model-2,macOS,2017-06-01,SN-100002,TRUE
+203,Laptop,HP,Model-3,Ubuntu Linux,2018-06-01,SN-100003,TRUE
+204,Laptop,Lenovo,Model-4,Ubuntu Linux,2019-06-01,SN-100004,FALSE
+205,Laptop,Asus,Model-5,Ubuntu Linux,2020-06-01,SN-100005,TRUE
+206,Laptop,Asus,Model-6,Ubuntu Linux,2021-06-01,SN-100006,TRUE
+207,Laptop,Lenovo,Model-7,Ubuntu Linux,2022-06-01,SN-100007,TRUE
+208,Laptop,Dell,Model-8,macOS,2015-06-01,SN-100008,FALSE
+209,Laptop,Asus,Model-9,Windows 11,2016-06-01,SN-100009,TRUE
+210,Laptop,Apple,Model-10,macOS,2017-06-01,SN-100010,TRUE
+211,Laptop,Lenovo,Model-11,Windows 11,2018-06-01,SN-100011,TRUE
+212,Laptop,Lenovo,Model-12,Windows 11,2019-06-01,SN-100012,FALSE
+213,Laptop,Asus,Model-13,macOS,2020-06-01,SN-100013,TRUE
+214,Laptop,Dell,Model-14,Windows 11,2021-06-01,SN-100014,TRUE
+215,Laptop,HP,Model-15,Windows 11,2022-06-01,SN-100015,TRUE
+216,Laptop,Lenovo,Model-16,macOS,2015-06-01,SN-100016,FALSE
+217,Laptop,Asus,Model-17,Windows 11,2016-06-01,SN-100017,TRUE
+218,Laptop,Asus,Model-18,Ubuntu Linux,2017-06-01,SN-100018,TRUE
+219,Laptop,Dell,Model-19,Windows 11,2018-06-01,SN-100019,TRUE
+220,Laptop,HP,Model-20,Ubuntu Linux,2019-06-01,SN-100020,FALSE
+221,Laptop,HP,Model-21,macOS,2020-06-01,SN-100021,TRUE
+222,Laptop,Lenovo,Model-22,Windows 11,2021-06-01,SN-100022,TRUE
+223,Laptop,HP,Model-23,Windows 11,2022-06-01,SN-100023,TRUE
+224,Laptop,Apple,Model-24,Windows 11,2015-06-01,SN-100024,FALSE
+225,Laptop,HP,Model-25,macOS,2016-06-01,SN-100025,TRUE
+226,Laptop,HP,Model-26,Windows 11,2017-06-01,SN-100026,TRUE
+227,Laptop,Asus,Model-27,macOS,2018-06-01,SN-100027,TRUE
+228,Laptop,Apple,Model-28,Windows 11,2019-06-01,SN-100028,FALSE
+229,Laptop,HP,Model-29,Windows 11,2020-06-01,SN-100029,TRUE
+230,Laptop,Apple,Model-30,Windows 11,2021-06-01,SN-100030,TRUE
+231,Laptop,Apple,Model-31,macOS,2022-06-01,SN-100031,TRUE
+232,Laptop,Asus,Model-32,Ubuntu Linux,2015-06-01,SN-100032,FALSE
+233,Laptop,Apple,Model-33,Windows 11,2016-06-01,SN-100033,TRUE
+234,Laptop,Apple,Model-34,macOS,2017-06-01,SN-100034,TRUE
+235,Laptop,Apple,Model-35,Ubuntu Linux,2018-06-01,SN-100035,TRUE
+236,Laptop,Asus,Model-36,Windows 11,2019-06-01,SN-100036,FALSE
+237,Laptop,HP,Model-37,Ubuntu Linux,2020-06-01,SN-100037,TRUE
+238,Laptop,Lenovo,Model-38,Windows 11,2021-06-01,SN-100038,TRUE
+239,Laptop,Apple,Model-39,Ubuntu Linux,2022-06-01,SN-100039,TRUE
+240,Laptop,HP,Model-40,macOS,2015-06-01,SN-100040,FALSE

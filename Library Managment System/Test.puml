@@ -1,0 +1,214 @@
+@startuml
+class src.main.java.Menu {
+- LibraryController controller
+- Scanner scanner
++ void mainMenu()
+- void itemsMenu()
+- void booksMenu()
+- void laptopsMenu()
+- void cdsMenu()
+- void searchItemMenu()
+- void customersMenu()
+- void loansMenu()
+}
+
+
+class src.main.java.Loans {
+- int loanID
+- int customerID
+- int itemID
+- String itemType
+- LocalDate loanDate
+- LocalDate returnDate
+- double fineAmount
++ int getLoanID()
++ void setLoanID(int)
++ int getCustomerID()
++ void setCustomerID(int)
++ int getItemID()
++ void setItemID(int)
++ String getItemType()
++ void setItemType(String)
++ LocalDate getLoanDate()
++ void setLoanDate(LocalDate)
++ LocalDate getReturnDate()
++ void setReturnDate(LocalDate)
++ double getFineAmount()
++ void setFineAmount(double)
+}
+
+
+class src.main.java.CDs {
+- String name
+- String genre
+- String studio
+- short audienceScore
+- short rottenTomatoes
+- LocalDate releaseDate
++ String getName()
++ void setName(String)
++ String getGenre()
++ void setGenre(String)
++ String getStudio()
++ void setStudio(String)
++ short getAudienceScore()
++ void setAudienceScore(short)
++ short getRottenTomatoes()
++ void setRottenTomatoes(short)
++ LocalDate getReleaseDate()
++ void setYear(LocalDate)
+}
+
+
+class src.main.java.LibraryController {
+~ Scanner scanner
+~ List<Customer> customers
+~ List<Loans> loans
+~ List<Books> books
+~ List<Laptops> laptops
+~ List<CDs> cds
++ void loadData()
++ void addBook()
++ void removeBook()
++ void setBookValue()
++ void loanBook()
++ void returnBook()
++ void addLaptop()
++ void removeLaptop()
++ void setLaptopValue()
++ void loanLaptop()
++ void returnLaptop()
++ void addCD()
++ void removeCD()
++ void setCDValue()
++ void loanCD()
++ void returnCD()
++ void listAllItems()
++ void listAllLoans()
++ void addCustomer()
++ void removeCustomer()
++ void setUserData()
++ void payFines()
++ void calculateFines()
++ void searchBooks()
++ void searchLaptops()
++ void searchCDs()
++ void customerNameSearch()
++ void cusomerIDSearch()
++ void makeUpdatedCSVs()
++ int nextHighestNumber()
++ void updateComboList()
++ void saveListToCSV(List<T>,String)
+}
+
+
+class src.main.java.Books {
+- String title
+- String author
+- String publisher
+- String isbn
+- String series
+- Double rating
+- String description
+- String language
+- String genre
+- LocalDate releaseDate
++ String getTitle()
++ void setTitle(String)
++ String getAuthor()
++ void setAuthor(String)
++ String getPublisher()
++ void setPublisher(String)
++ String getISBN()
++ void setISBN(String)
++ String getSeries()
++ void setSeries(String)
++ Double getRating()
++ void setRating(Double)
++ String getDescription()
++ void setDescription(String)
++ String getLanguage()
++ void setLanguage(String)
++ String getGenre()
++ void setGenre(String)
++ LocalDate getReleaseDate()
++ void setReleaseDate(LocalDate)
+}
+
+
+class src.main.java.Customer {
+- int customerID
+- String name
+- String email
+- String phoneNumber
+- String address
+- double fines
++ int getCustomerID()
++ void setCustomerID(int)
++ String getName()
++ void setName(String)
++ String getEmail()
++ void setEmail(String)
++ String getPhoneNumber()
++ void setPhoneNumber(String)
++ String getAddress()
++ void setAddress(String)
++ double getFines()
++ void setFines(double)
+}
+
+
+class src.main.java.ReadCSV {
++ {static} List<T> readCSV(Reader,Class<T>)
++ {static} void handleError(FileNotFoundException)
++ void writeCSV(String)
+}
+
+
+
+
+class src.main.java.Laptops {
+- String brand
+- String model
+- String operatingSystem
+- LocalDate releaseDate
+- String serialNumber
++ String getBrand()
++ void setBrand(String)
++ String getModel()
++ void setModel(String)
++ String getOperatingSystem()
++ void setOperatingSystem(String)
++ LocalDate getReleaseDate()
++ void setReleaseDate(LocalDate)
++ String getSerialNumber()
++ void setSerialNumber(String)
+}
+
+abstract class src.main.java.LibraryItem {
+- int id
+- String type
+- boolean available
+- Integer borrowerID
+- LocalDate borrowDate
+~ {static} List<LibraryItem> allItems
++ void LibraryItem()
++ int getId()
++ void setId(int)
++ String getType()
++ void setType(String)
++ boolean isAvailable()
++ void setAvailable(boolean)
++ Integer getBorrowerID()
++ void setBorrowerID(Integer)
++ LocalDate getBorrowDate()
++ void setBorrowDate(LocalDate)
++ String toString()
++ LibraryItem getItemByID(int)
+}
+
+
+src.main.java.LibraryItem <|-- src.main.java.CDs
+src.main.java.LibraryItem <|-- src.main.java.Books
+src.main.java.LibraryItem <|-- src.main.java.Laptops
+@enduml
